@@ -92,13 +92,27 @@ header h1{
 
 	
 }
+header #logo{
+		border-right: 1px solid #fff;
+
+}
 header #logo img{
 	width: 52px;
-	border-right: 1px solid #fff;
 	padding-right:.5em;
 	margin-right: .5em; 
-	
+	transition: transform .3s;
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	-o-transition: -o-transform .3s;
 }
+header #logo img:hover{
+	transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-t-transform:rotate(360deg);
+}
+
 header #avatar{
 	margin: .5em 0.5em 0 0;
 	position: absolute;
